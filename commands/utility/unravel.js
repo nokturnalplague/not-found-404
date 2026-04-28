@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
-	data: new SlashCommandBuilder().setName('unravel').setDescription('Best. Song. Ever.'),
+	data: new SlashCommandBuilder().setName('unravel').setDescription('BEST_TRACK_200'),
 	async execute(interaction) {
 		await interaction.reply('Oshiete, oshiete yo sono shikumi wo \n Boku no naka ni dare ga iru no? \n Kowareta, kowareta yo kono sekai de \n Kimi ga warau nanimo miezu ni \n \n Kowareta boku nante sa \n Iki wo tomete \n Hodokenai mou hodokenai yo \n Shinjitsu sae, freeze \n \n Kowaseru, kowasenai, kurueru, kuruenai \n Anata wo mitsukete \n \n Yureta yuganda sekai ni dan dan \n Boku wa sukitootte mienaku natte \n Mitsukenaide boku no koto wo mitsumenaide \n Dareka ga egaita sekai no naka de \n Anata wo kizutsuketaku wa nai yo \n Oboeteite boku no koto wo \n \n Azayaka na mama \n \n Mugen ni hirogaru kodoku ga karamaru \n Mujaki ni waratta kioku ga sasatte \n Ugokenai, ugokenai, ugokenai \n Ugokenai, ugokenai, ugokenai yo \n Unravelling the world \n \n Kawatte shimatta kaerarenakatta \n Futatsu ga karamaru futari ga horobiru \n Kowaseru, kowasenai, kurueru, kuruenai \n Anata wo kegasenai yo \n \n Yureta yuganda sekai ni dan dan \n Boku wa sukitootte mienaku natte \n Mitsukenaide boku no koto wo mitsumenaide \n Dareka ga shikunda kodoku na wana ni \n Mirai ga hodokete shimau mae ni \n Omoidashite boku no koto wo \n Azayaka na mama \n \n Wasurenaide, wasurenaide \n Wasurenaide, wasurenaide \n Kawatte shimatta koto ni paralyze \n Kaerarenai koto darake no paradise \n Oboeteite boku no koto wo \n \n Oshiete, oshiete \n Boku no naka ni dare ga iru no?');
 	},

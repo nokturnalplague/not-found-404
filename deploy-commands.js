@@ -17,7 +17,7 @@ for (const folder of commandFolders) {
 		if ('data' in command && 'execute' in command) {
 			commands.push(command.data.toJSON());
 		} else {
-			console.log(`[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`);
+			console.log(`[AVISO] O comando localizado em ${filePath} não possui a propriedade obrigatória "data" ou "execute".`);
 		}
 	}
 }
@@ -26,11 +26,11 @@ const rest = new REST().setToken(DISCORD_TOKEN);
 
 (async () => {
 	try {
-		console.log(`Started refreshing ${commands.length} application (/) commands.`);
+		console.log(`Atualizando ${commands.length} comandos de aplicação (/).`);
 
 		const data = await rest.put(Routes.applicationGuildCommands(CLIENT_ID, SERVER_ID), { body: commands });
 
-		console.log(`Successfully reloaded ${data.length} application (/) commands.`);
+		console.log(`Atualização concluída com sucesso. ${data.length} comandos de aplicação (/) foram recarregados.`);
 	} catch (error) {
 		console.error(error);
 	}

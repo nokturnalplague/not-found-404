@@ -1,0 +1,23 @@
+{
+  "name": "not-found-404",
+  "version": "1.0.0",
+  "description": "My Error 404 Discord server bot (●'◡'●)",
+  "repository": {
+    "type": "git",
+    "url": "not-found-404"
+  },
+  "license": "ISC",
+  "author": "nokturnalplague",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "^10.2.1"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.3",
+    "dotenv": "^17.4.2"
+  }
+}
